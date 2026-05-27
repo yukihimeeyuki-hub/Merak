@@ -1,6 +1,7 @@
 const { execSync } = require('child_process')
 
 try {
+  debugger
   const pnpmVersion = execSync('pnpm --version', { encoding: 'utf8' }).trim()
   const majorVersion = parseInt(pnpmVersion.split('.')[0], 10)
 
